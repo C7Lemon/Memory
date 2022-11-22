@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 3%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: 200px 200px;
+    gap: 10px;
+}
+
+.grid-container div {
+    background-color: aqua;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container button {
+    background-color: #00909a;
+    border: 3px solid;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container button:hover {
+    background-color: #f9ff00;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
