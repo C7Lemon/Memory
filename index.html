@@ -2,26 +2,55 @@
 <html>
 <head>
     <link href="main.css" rel="stylesheet">
-    <title>Memoreie</title>
+    <title>Jurassic Memoreie</title>
 </head>
 
 <body>
-<h1>Memory</h1>
+<h1>Jurassic Memory</h1>
 
-
+<table class="spielstand">
+    <thead class="Spieler">
+    <tr>
+        <th>
+            <div>Player 1</div>
+        </th>
+        <th>
+            <div>Player 2</div>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <div id="name1">Name</div>
+        </th>
+        <th>
+            <div id="name2">Name</div>
+        </th>
+    </tr>
+    </thead>
+    <tbody class="punktestand">
+    <tr>
+        <td>
+            <div id="punkte1">Punkte Spieler1</div>
+        </td>
+        <td>
+            <div id="punkte2">Punkte Spieler2</div>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 <table class="spielfeld">
     <thead></thead>
     <tbody class="spielfeldKörper">
     <tr>
         <td>
-            <button class="ersteKarte" onclick="deckeAuf()"><img src="pic/Foot%201%20v%201.jpg" width="50" height="50"/>1</button>
+            <button class="ersteKarte" onclick="deckeAuf()">1</button>
         </td>
         <td>
             <button class="ersteKarte" onclick="deckeAuf()">1</button>
         </td>
         <td>
-            <button class="zweiteKarte" onclick="deckeAuf()"></button>
+            <button class="zweiteKarte" onclick="deckeAuf()">2</button>
         </td>
         <td>
             <button class="zweiteKarte" onclick="deckeAuf()">2</button>
