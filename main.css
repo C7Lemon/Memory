@@ -11,18 +11,33 @@ body {
     background-repeat: no-repeat;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+
 h1 {
     text-align: center;
 }
 
 table.spielstand {
-    border: 0.25em solid #000000;
+    border: 0.25em solid #f9fd01;
     margin-right: auto;
     margin-left: auto;
-    border-collapse: collapse;
+    background-color: #f20600;
+
 }
-th, td.spielstand{
-    border: 1px solid black;
+
+th {
+    padding: 1em;
+}
+
+th, td.spielstand {
+    border: 1px solid #f9fd00;
 }
 
 table.spielfeld {
@@ -30,17 +45,54 @@ table.spielfeld {
     border-spacing: 1em;
     margin-right: auto;
     margin-left: auto;
-
 }
 
 button {
-    width: 15em;
-    height: 15em;
-    border: black solid 10px;
-    border-radius: 10px;
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: black solid 0.5em;
+    border-radius: 1em;
 }
 
-button:hover {
+button.ersteKarte, .zweiteKarte, .dritteKarte, .vierteKarte, .fuenfteKarte, .sechsteKarte, .siebteKarte, .achteKarte {
+    width: 15em;
+    height: 15em;
+    border: black solid 1em;
+    border-radius: 1em;
+}
+
+button:hover.ersteKarte {
+    border: #373737 solid;
+}
+
+button:hover.zweiteKarte {
+    border: #373737 solid;
+}
+
+button:hover.dritteKarte {
+    border: #373737 solid;
+}
+
+button:hover.vierteKarte {
+    border: #373737 solid;
+}
+
+button:hover.fuenfteKarte {
+    border: #373737 solid;
+}
+
+button:hover.sechsteKarte {
+    border: #373737 solid;
+}
+
+button:hover.siebteKarte {
+    border: #373737 solid;
+}
+
+button:hover.achteKarte {
     border: #373737 solid;
 }
 

@@ -6,7 +6,9 @@
 </head>
 
 <body>
-<h1>Jurassic Memory</h1>
+<div>
+    <img class="logo" src="Logo.png" alt="Jurassic Parklogo nur als Jurassic Memory">
+</div>
 
 <table class="spielstand">
     <thead class="Spieler">
@@ -29,31 +31,42 @@
     </thead>
     <tbody class="punktestand">
     <tr>
-        <td>
+        <th>
             <div id="punkte1">Punkte Spieler1</div>
-        </td>
-        <td>
+        </th>
+        <th>
             <div id="punkte2">Punkte Spieler2</div>
-        </td>
+        </th>
     </tr>
     </tbody>
 </table>
+
+<div>
+    <button>Spiel starten</button>
+</div>
+
+<button onclick="namenSetzen1()">Namen Spieler1</button>
+<button onclick="namenSetzen2()">Namen Spieler2</button>
+<button onclick="punkteSetzen1(3)">P1</button>
+<button onclick="punkteSetzen2(3000)">P2</button>
+
+<p id="demo"></p>
 
 <table class="spielfeld">
     <thead></thead>
     <tbody class="spielfeldKörper">
     <tr>
         <td>
-            <button class="ersteKarte" onclick="deckeAuf()">1</button>
+            <button class="ersteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="ersteKarte" onclick="deckeAuf()">1</button>
+            <button class="ersteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="zweiteKarte" onclick="deckeAuf()">2</button>
+            <button class="zweiteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="zweiteKarte" onclick="deckeAuf()">2</button>
+            <button class="zweiteKarte" onclick="deckeAuf()"></button>
         </td>
     </tr>
     <tr>
@@ -64,38 +77,38 @@
             <button class="dritteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="vierteKarte" onclick="deckeAuf()">4</button>
+            <button class="vierteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="vierteKarte" onclick="deckeAuf()">4</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button class="fuenfteKarte" onclick="deckeAuf()">5</button>
-        </td>
-        <td>
-            <button class="fuenfteKarte" onclick="deckeAuf()">5</button>
-        </td>
-        <td>
-            <button class="sechsteKarte" onclick="deckeAuf()">6</button>
-        </td>
-        <td>
-            <button class="sechsteKarte" onclick="deckeAuf()">6</button>
+            <button class="vierteKarte" onclick="deckeAuf()"></button>
         </td>
     </tr>
     <tr>
         <td>
-            <button class="siebteKarte" onclick="deckeAuf()">7</button>
+            <button class="fuenfteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="siebteKarte" onclick="deckeAuf()">7</button>
+            <button class="fuenfteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="achteKarte" onclick="deckeAuf()">8</button>
+            <button class="sechsteKarte" onclick="deckeAuf()"></button>
         </td>
         <td>
-            <button class="achteKarte" onclick="deckeAuf()">8</button>
+            <button class="sechsteKarte" onclick="deckeAuf()"></button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="siebteKarte" onclick="deckeAuf()"></button>
+        </td>
+        <td>
+            <button class="siebteKarte" onclick="deckeAuf()"></button>
+        </td>
+        <td>
+            <button class="achteKarte" onclick="deckeAuf()"></button>
+        </td>
+        <td>
+            <button class="achteKarte" onclick="deckeAuf()"></button>
 
         </td>
     </tr>
