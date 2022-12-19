@@ -4,9 +4,7 @@ html {
 }
 
 body {
-    /*background-color: #2f6a20;*/
     padding: 3%;
-    /*background-image: url("pic/jungle.jpg");*/
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -15,7 +13,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 50%;
     height: auto;
     padding: 10px;
 }
@@ -29,7 +27,8 @@ table.spielstand {
     margin-right: auto;
     margin-left: auto;
     background-color: #f20600;
-
+    font-family: Jurassic Park;
+    src: url("doc/jurassic-park-font/JurassicPark-BL48.ttf");
 }
 
 th {
@@ -57,81 +56,61 @@ button {
     border-radius: 1em;
 }
 
-button.ersteKarte, .zweiteKarte, .dritteKarte, .vierteKarte, .fuenfteKarte, .sechsteKarte, .siebteKarte, .achteKarte {
+button:hover {
+    border: #f9fd00 solid 0.5em;
+}
+
+.karte {
     width: 15em;
     height: 15em;
     border: black solid 1em;
     border-radius: 1em;
-}
-
-button:hover.ersteKarte {
-    border: #373737 solid;
-}
-
-button:hover.zweiteKarte {
-    border: #373737 solid;
-}
-
-button:hover.dritteKarte {
-    border: #373737 solid;
-}
-
-button:hover.vierteKarte {
-    border: #373737 solid;
-}
-
-button:hover.fuenfteKarte {
-    border: #373737 solid;
-}
-
-button:hover.sechsteKarte {
-    border: #373737 solid;
-}
-
-button:hover.siebteKarte {
-    border: #373737 solid;
-}
-
-button:hover.achteKarte {
-    border: #373737 solid;
-}
-
-.ersteKarte {
-    background-image: url("pic/Foot 1 v 1.jpg");
     background-size: 100% 100%;
 }
 
-.zweiteKarte {
+.verdeckt {
+    background-image: url("pic/background.jpg");
+}
+
+button:hover.karte {
+    border: #373737 solid;
+}
+
+.ersteKarte.offen {
+    background-image: url("pic/Foot 1 v 1.jpg");
+}
+
+.zweiteKarte.offen {
     background-image: url("pic/Foot 2 v 1.jpg");
     background-size: 100% 100%;
 }
 
-.dritteKarte {
+.dritteKarte.offen {
     background-image: url("pic/Foot 3 v 1.jpg");
     background-size: 100% 100%;
 }
 
-.vierteKarte {
+.vierteKarte.offen {
     background-image: url("pic/Foot 4 v 1.jpg");
     background-size: 100% 100%;
 }
 
-.fuenfteKarte {
+.fuenfteKarte.offen {
     background-image: url("pic/Foot 5 v 1.jpg");
     background-size: 100% 100%;
 }
 
-.sechsteKarte {
+.sechsteKarte.offen {
     background-image: url("pic/Foot 6 v 1.jpg");
     background-size: 100% 100%;
 }
 
-.siebteKarte {
+.siebteKarte.offen {
     background-image: url("pic/Foot 7 v 1.jpg");
     background-size: 100% 100%;
 }
 
-.achteKarte {
+.achteKarte.offen {
     background-image: url("pic/Foot 8 v 1.jpg");
     background-size: 100% 100%;
 }

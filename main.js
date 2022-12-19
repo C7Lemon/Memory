@@ -1,7 +1,6 @@
-function deckeAuf() {
-    var img = document.getElementsByClassName("image");
-    img.src = "images/test2";
-    return false;
+function deckeAuf(id) {
+    let button = document.getElementById(id);
+    button.classList.add("offen");
 }
 
 function namenSetzen1() {
@@ -11,6 +10,7 @@ function namenSetzen1() {
             name;
     }
 }
+
 function namenSetzen2() {
     let name = prompt("Spieler2 bitte Namen eingeben: ", "Dr. Alan Grant");
     if (name != null) {
@@ -19,16 +19,21 @@ function namenSetzen2() {
     }
 }
 
-
 function punkteSetzen1(punkte1) {
     if (punkte1 != null) {
         document.getElementById("punkte1").innerHTML =
-            punkte1;
+            "Punkte: " + punkte1;
     }
 }
+
 function punkteSetzen2(punkte2) {
     if (punkte2 != null) {
         document.getElementById("punkte2").innerHTML =
-            punkte2;
+            "Punkte: " + punkte2;
     }
+}
+
+function start() {
+    namenSetzen1();
+    namenSetzen2();
 }

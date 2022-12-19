@@ -2,12 +2,13 @@
 <html>
 <head>
     <link href="main.css" rel="stylesheet">
+    <link href="data/jurassic-park-font/JurassicPark-BL48.ttf">
     <title>Jurassic Memoreie</title>
 </head>
 
 <body>
 <div>
-    <img class="logo" src="Logo.png" alt="Jurassic Parklogo nur als Jurassic Memory">
+    <img class="logo" src="pic/Logo.png" alt="Jurassic Parklogo nur als Jurassic Memory">
 </div>
 
 <table class="spielstand">
@@ -42,7 +43,7 @@
 </table>
 
 <div>
-    <button>Spiel starten</button>
+    <button onclick="start()">Spiel starten</button>
 </div>
 
 <button onclick="namenSetzen1()">Namen Spieler1</button>
@@ -50,65 +51,63 @@
 <button onclick="punkteSetzen1(3)">P1</button>
 <button onclick="punkteSetzen2(3000)">P2</button>
 
-<p id="demo"></p>
-
 <table class="spielfeld">
     <thead></thead>
     <tbody class="spielfeldKörper">
     <tr>
         <td>
-            <button class="ersteKarte" onclick="deckeAuf()"></button>
+            <button id="1" class="ersteKarte karte verdeckt" onclick="deckeAuf(1)"></button>
         </td>
         <td>
-            <button class="ersteKarte" onclick="deckeAuf()"></button>
+            <button id="2" class="ersteKarte karte verdeckt" onclick="deckeAuf(2)"></button>
         </td>
         <td>
-            <button class="zweiteKarte" onclick="deckeAuf()"></button>
+            <button id="3" class="zweiteKarte karte verdeckt" onclick="deckeAuf(3)"></button>
         </td>
         <td>
-            <button class="zweiteKarte" onclick="deckeAuf()"></button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button class="dritteKarte" onclick="deckeAuf()"></button>
-        </td>
-        <td>
-            <button class="dritteKarte" onclick="deckeAuf()"></button>
-        </td>
-        <td>
-            <button class="vierteKarte" onclick="deckeAuf()"></button>
-        </td>
-        <td>
-            <button class="vierteKarte" onclick="deckeAuf()"></button>
+            <button id="4" class="zweiteKarte karte verdeckt" onclick="deckeAuf(4)"></button>
         </td>
     </tr>
     <tr>
         <td>
-            <button class="fuenfteKarte" onclick="deckeAuf()"></button>
+            <button id="5" class="dritteKarte karte verdeckt" onclick="deckeAuf(5)"></button>
         </td>
         <td>
-            <button class="fuenfteKarte" onclick="deckeAuf()"></button>
+            <button id="6" class="dritteKarte karte verdeckt" onclick="deckeAuf(6)"></button>
         </td>
         <td>
-            <button class="sechsteKarte" onclick="deckeAuf()"></button>
+            <button id="7" class="vierteKarte karte verdeckt" onclick="deckeAuf(7)"></button>
         </td>
         <td>
-            <button class="sechsteKarte" onclick="deckeAuf()"></button>
+            <button id="8" class="vierteKarte karte verdeckt" onclick="deckeAuf(8)"></button>
         </td>
     </tr>
     <tr>
         <td>
-            <button class="siebteKarte" onclick="deckeAuf()"></button>
+            <button id="9" class="fuenfteKarte karte verdeckt" onclick="deckeAuf(9)"></button>
         </td>
         <td>
-            <button class="siebteKarte" onclick="deckeAuf()"></button>
+            <button id="10" class="fuenfteKarte karte verdeckt" onclick="deckeAuf(10)"></button>
         </td>
         <td>
-            <button class="achteKarte" onclick="deckeAuf()"></button>
+            <button id="11" class="sechsteKarte karte verdeckt" onclick="deckeAuf(11)"></button>
         </td>
         <td>
-            <button class="achteKarte" onclick="deckeAuf()"></button>
+            <button id="12" class="sechsteKarte karte verdeckt" onclick="deckeAuf(12)"></button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="13" class="siebteKarte karte verdeckt" onclick="deckeAuf(13)"></button>
+        </td>
+        <td>
+            <button id="14" class="siebteKarte karte verdeckt" onclick="deckeAuf(14)"></button>
+        </td>
+        <td>
+            <button id="15" class="achteKarte karte verdeckt" onclick="deckeAuf(15)"></button>
+        </td>
+        <td>
+            <button id="16" class="achteKarte karte verdeckt" onclick="deckeAuf(16)"></button>
 
         </td>
     </tr>
