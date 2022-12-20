@@ -3,6 +3,11 @@ function deckeAuf(id) {
     button.classList.add("offen");
 }
 
+function deckeZu(id){
+    let button = document.getElementById(id);
+    button.classList.remove("offen");
+}
+
 function namenSetzen1() {
     let name = prompt("Spieler1 bitte Namen eingeben: ", "Dr. Ian Malcolm");
     if (name != null) {
@@ -33,7 +38,18 @@ function punkteSetzen2(punkte2) {
     }
 }
 
+function aufZu(id) {
+    let button = document.getElementById(id)
+    if (button.classList.contains("offen") ){
+        deckeZu(id);
+    }else {
+        deckeAuf(id)
+    }
+
+}
+
 function start() {
     namenSetzen1();
     namenSetzen2();
+
 }

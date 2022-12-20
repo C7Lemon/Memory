@@ -46,68 +46,67 @@
     <button onclick="start()">Spiel starten</button>
 </div>
 
-<button onclick="namenSetzen1()">Namen Spieler1</button>
-<button onclick="namenSetzen2()">Namen Spieler2</button>
 <button onclick="punkteSetzen1(3)">P1</button>
 <button onclick="punkteSetzen2(3000)">P2</button>
+<button onclick="deckeZu(1)">ZU</button>
 
 <table class="spielfeld">
     <thead></thead>
     <tbody class="spielfeldKörper">
     <tr>
         <td>
-            <button id="1" class="ersteKarte karte verdeckt" onclick="deckeAuf(1)"></button>
+            <button id="1" class="ersteKarte karte verdeckt" onclick="aufZu(1)"></button>
         </td>
         <td>
-            <button id="2" class="ersteKarte karte verdeckt" onclick="deckeAuf(2)"></button>
+            <button id="2" class="ersteKarte karte verdeckt" onclick="aufZu(2)"></button>
         </td>
         <td>
-            <button id="3" class="zweiteKarte karte verdeckt" onclick="deckeAuf(3)"></button>
+            <button id="3" class="zweiteKarte karte verdeckt" onclick="aufZu(3)"></button>
         </td>
         <td>
-            <button id="4" class="zweiteKarte karte verdeckt" onclick="deckeAuf(4)"></button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button id="5" class="dritteKarte karte verdeckt" onclick="deckeAuf(5)"></button>
-        </td>
-        <td>
-            <button id="6" class="dritteKarte karte verdeckt" onclick="deckeAuf(6)"></button>
-        </td>
-        <td>
-            <button id="7" class="vierteKarte karte verdeckt" onclick="deckeAuf(7)"></button>
-        </td>
-        <td>
-            <button id="8" class="vierteKarte karte verdeckt" onclick="deckeAuf(8)"></button>
+            <button id="4" class="zweiteKarte karte verdeckt" onclick="aufZu(4)"></button>
         </td>
     </tr>
     <tr>
         <td>
-            <button id="9" class="fuenfteKarte karte verdeckt" onclick="deckeAuf(9)"></button>
+            <button id="5" class="dritteKarte karte verdeckt" onclick="aufZu(5)"></button>
         </td>
         <td>
-            <button id="10" class="fuenfteKarte karte verdeckt" onclick="deckeAuf(10)"></button>
+            <button id="6" class="dritteKarte karte verdeckt" onclick="aufZu(6)"></button>
         </td>
         <td>
-            <button id="11" class="sechsteKarte karte verdeckt" onclick="deckeAuf(11)"></button>
+            <button id="7" class="vierteKarte karte verdeckt" onclick="aufZu(7)"></button>
         </td>
         <td>
-            <button id="12" class="sechsteKarte karte verdeckt" onclick="deckeAuf(12)"></button>
+            <button id="8" class="vierteKarte karte verdeckt" onclick="aufZu(8)"></button>
         </td>
     </tr>
     <tr>
         <td>
-            <button id="13" class="siebteKarte karte verdeckt" onclick="deckeAuf(13)"></button>
+            <button id="9" class="fuenfteKarte karte verdeckt" onclick="aufZu(9)"></button>
         </td>
         <td>
-            <button id="14" class="siebteKarte karte verdeckt" onclick="deckeAuf(14)"></button>
+            <button id="10" class="fuenfteKarte karte verdeckt" onclick="aufZu(10)"></button>
         </td>
         <td>
-            <button id="15" class="achteKarte karte verdeckt" onclick="deckeAuf(15)"></button>
+            <button id="11" class="sechsteKarte karte verdeckt" onclick="aufZu(11)"></button>
         </td>
         <td>
-            <button id="16" class="achteKarte karte verdeckt" onclick="deckeAuf(16)"></button>
+            <button id="12" class="sechsteKarte karte verdeckt" onclick="aufZu(12)"></button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="13" class="siebteKarte karte verdeckt" onclick="aufZu(13)"></button>
+        </td>
+        <td>
+            <button id="14" class="siebteKarte karte verdeckt" onclick="aufZu(14)"></button>
+        </td>
+        <td>
+            <button id="15" class="achteKarte karte verdeckt" onclick="aufZu(15)"></button>
+        </td>
+        <td>
+            <button id="16" class="achteKarte karte verdeckt" onclick="aufZu(16)"></button>
 
         </td>
     </tr>

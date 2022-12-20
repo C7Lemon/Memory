@@ -24,6 +24,7 @@ h1 {
 
 table.spielstand {
     border: 0.25em solid #f9fd01;
+    border-collapse: collapse;
     margin-right: auto;
     margin-left: auto;
     background-color: #f20600;
@@ -40,6 +41,8 @@ th, td.spielstand {
 }
 
 table.spielfeld {
+    /*width: 100%;*/
+    column-width: max-content;
     border: 0.5em;
     border-spacing: 1em;
     margin-right: auto;
