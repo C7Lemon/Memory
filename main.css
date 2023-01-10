@@ -76,7 +76,7 @@ button:hover {
 }
 
 button:hover.karte {
-    border: #373737 solid;
+    border: #000000 solid;
 }
 
 .ersteKarte.offen {

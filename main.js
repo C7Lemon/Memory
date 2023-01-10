@@ -8,6 +8,14 @@ function deckeZu(id){
     button.classList.remove("offen");
 }
 
+function deckeAlleZu() {
+    let i=1;
+    while (i<16){
+        deckeZu(i);
+        i++;
+    }
+}
+
 function namenSetzen1() {
     let name = prompt("Spieler1 bitte Namen eingeben: ", "Dr. Ian Malcolm");
     if (name != null) {
@@ -31,11 +39,25 @@ function punkteSetzen1(punkte1) {
     }
 }
 
+let d = 0;
+
+function punkteSetzen1plus() {
+    d++
+    punkteSetzen1(d)
+}
+
 function punkteSetzen2(punkte2) {
     if (punkte2 != null) {
         document.getElementById("punkte2").innerHTML =
             "Punkte: " + punkte2;
     }
+}
+
+let c = 0;
+
+function punkteSetzen2plus() {
+    c++
+    punkteSetzen2(c)
 }
 
 function aufZu(id) {
@@ -45,11 +67,14 @@ function aufZu(id) {
     }else {
         deckeAuf(id)
     }
-
 }
 
 function start() {
+    deckeAlleZu();
     namenSetzen1();
     namenSetzen2();
-
+    c = 0;
+    d = 0;
+    punkteSetzen1(0)
+    punkteSetzen2(0)
 }
