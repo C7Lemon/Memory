@@ -68,9 +68,23 @@ function aufZu(id) {
         deckeAuf(id)
     }
 }
+ function randomTable() {
+     var table = document.getElementById("myTable");
+     var tbody = table.getElementsByTagName("tbody")[0];
+     var rows = tbody.getElementsByTagName("tr");
+     var td = tbody.getElementsByTagName("td");
+     for (var i = 0; i < rows.length; i++) {
+         tbody.appendChild(rows[Math.floor(Math.random() * rows.length)]);
+     }
+     for (var i = 0; i < td.length; i++) {
+         tbody.appendChild(td[Math.floor(Math.random() * td.length)]);
+     }
+ }
+
 
 function start() {
     deckeAlleZu();
+    randomTable()
     namenSetzen1();
     namenSetzen2();
     c = 0;
