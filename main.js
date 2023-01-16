@@ -69,14 +69,14 @@ function aufZu(id) {
     }
 }
  function randomTable() {
-     var table = document.getElementById("myTable");
-     var tbody = table.getElementsByTagName("tbody")[0];
-     var rows = tbody.getElementsByTagName("tr");
-     var td = tbody.getElementsByTagName("td");
-     for (var i = 0; i < rows.length; i++) {
+     let table = document.getElementById("myTable");
+     let tbody = table.getElementsByTagName("tbody")[0];
+     let rows = tbody.getElementsByTagName("tr");
+     let td = tbody.getElementsByTagName("td");
+     for (let i = 0; i < rows.length; i++) {
          tbody.appendChild(rows[Math.floor(Math.random() * rows.length)]);
      }
-     for (var i = 0; i < td.length; i++) {
+     for (let i = 0; i < td.length; i++) {
          tbody.appendChild(td[Math.floor(Math.random() * td.length)]);
      }
  }
