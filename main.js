@@ -8,6 +8,15 @@ function deckeZu(id){
     button.classList.remove("offen");
 }
 
+function aufZu(id) {
+    let button = document.getElementById(id)
+    if (button.classList.contains("offen") ){
+        deckeZu(id);
+    }else {
+        deckeAuf(id)
+    }
+}
+
 function deckeAlleZu() {
     let i=1;
     while (i<16){
@@ -60,24 +69,24 @@ function punkteSetzen2plus() {
     punkteSetzen2(c)
 }
 
-function aufZu(id) {
-    let button = document.getElementById(id)
-    if (button.classList.contains("offen") ){
-        deckeZu(id);
-    }else {
-        deckeAuf(id)
-    }
-}
  function randomTable() {
      let table = document.getElementById("myTable");
      let tbody = table.getElementsByTagName("tbody")[0];
      let rows = tbody.getElementsByTagName("tr");
      let td = tbody.getElementsByTagName("td");
-     for (let i = 0; i < rows.length; i++) {
-         tbody.appendChild(rows[Math.floor(Math.random() * rows.length)]);
-     }
-     for (let i = 0; i < td.length; i++) {
-         tbody.appendChild(td[Math.floor(Math.random() * td.length)]);
+
+     //rows[0].append(randomTableData[0]);
+     for (let i = 0; i < 1; i++) {
+         let r = Math.floor(Math.random() * 3);
+         let s = Math.floor(Math.random() * 3);
+         let t = Math.floor(Math.random() * 3);
+         let randomTableData = rows[r].children;
+         console.log(rows[r] + " + " + randomTableData[s]);
+         rows[t].append(randomTableData[s]);
+        /*Eine schleife die überprüft, ob alle zeilen nur 4 elemente lang sind.
+        Wenn das nicht der Fall ist, soll die Schleife das obere nochmal aufrufen,
+         aber wenn die Zeile länger ist soll sie ein Element aus der Zeile nehmen
+         und in eine einfügen die nicht 4 Elemente hat.   */
      }
  }
 

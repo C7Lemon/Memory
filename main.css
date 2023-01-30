@@ -1,6 +1,8 @@
 html {
     box-sizing: border-box;
     background-image: url("pic/jungle.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 body {
@@ -13,7 +15,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 50em;
     height: auto;
     padding: 10px;
 }
@@ -40,6 +42,7 @@ th, td.spielstand {
 
 table.spielfeld {
     /*width: 100%;*/
+    /*table-layout: fixed;*/
     column-width: max-content;
     border: 0.5em;
     border-spacing: 1em;
@@ -61,6 +64,10 @@ button:hover {
     border: #f9fd00 solid 0.5em;
 }
 
+button:hover.karte {
+     border: #000000 solid;
+ }
+
 .karte {
     width: 15em;
     height: 15em;
@@ -71,10 +78,6 @@ button:hover {
 
 .verdeckt {
     background-image: url("pic/background.jpg");
-}
-
-button:hover.karte {
-    border: #000000 solid;
 }
 
 .ersteKarte.offen {
@@ -114,37 +117,4 @@ button:hover.karte {
 .achteKarte.offen {
     background-image: url("pic/Foot 8 v 1.jpg");
     background-size: 100% 100%;
-}
-
-/*
-.grid-container {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-auto-rows: 200px 200px;
-    gap: 10px;
-}
-
-.grid-container div {
-    background-color: aqua;
-    border: 3px solid;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.grid-container button {
-    background-color: #00909a;
-    border: 3px solid;
-    border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.grid-container button:hover {
-    background-color: #f9ff00;
-    border: 3px solid;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
