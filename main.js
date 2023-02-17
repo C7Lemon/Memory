@@ -41,6 +41,7 @@ function namenSetzen2() {
     }
 }
 
+
 function punkteSetzen1(punkte1) {
     if (punkte1 != null) {
         document.getElementById("punkte1").innerHTML =
@@ -49,7 +50,6 @@ function punkteSetzen1(punkte1) {
 }
 
 let d = 0;
-
 function punkteSetzen1plus() {
     d++
     punkteSetzen1(d)
@@ -63,10 +63,16 @@ function punkteSetzen2(punkte2) {
 }
 
 let c = 0;
-
 function punkteSetzen2plus() {
     c++
     punkteSetzen2(c)
+}
+
+function punkteReset(){
+    d = 0;
+    punkteSetzen1(0);
+    c = 0;
+    punkteSetzen2(0);
 }
 
  function randomTable() {
@@ -76,28 +82,25 @@ function punkteSetzen2plus() {
      let td = tbody.getElementsByTagName("td");
 
      //rows[0].append(randomTableData[0]);
-     for (let i = 0; i < 1; i++) {
-         let r = Math.floor(Math.random() * 3);
+     for (let i = 0; i < 500; i++) {
+         let r = Math.floor(Math.random() * 4);
          let s = Math.floor(Math.random() * 3);
-         let t = Math.floor(Math.random() * 3);
+
          let randomTableData = rows[r].children;
+         rows[r].append(randomTableData[s]);
          console.log(rows[r] + " + " + randomTableData[s]);
-         rows[t].append(randomTableData[s]);
-        /*Eine schleife die überprüft, ob alle zeilen nur 4 elemente lang sind.
-        Wenn das nicht der Fall ist, soll die Schleife das obere nochmal aufrufen,
-         aber wenn die Zeile länger ist soll sie ein Element aus der Zeile nehmen
-         und in eine einfügen die nicht 4 Elemente hat.   */
      }
+     let t = Math.floor(Math.random() * 3);
  }
 
 
 function start() {
-    deckeAlleZu();
-    randomTable()
     namenSetzen1();
     namenSetzen2();
     c = 0;
     d = 0;
-    punkteSetzen1(0)
-    punkteSetzen2(0)
+    punkteSetzen1(0);
+    punkteSetzen2(0);
+    randomTable();
+    deckeAlleZu();
 }
